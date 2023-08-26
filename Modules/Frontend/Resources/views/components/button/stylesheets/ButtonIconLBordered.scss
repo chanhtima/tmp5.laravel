@@ -1,0 +1,12 @@
+.co-button-icon-l-borderd{
+    @apply  bg-secondary text-white   block py-3  px-8 rounded-full min-w-[160px] hover:bg-[#ce917a];
+    a{
+        @apply flex items-center justify-center space-x-1;
+    }
+    &-img{
+        @apply relative right-0 transition-all duration-200 mt-[1px];
+        img{
+            @apply w-[22px]
+        }
+    }
+}

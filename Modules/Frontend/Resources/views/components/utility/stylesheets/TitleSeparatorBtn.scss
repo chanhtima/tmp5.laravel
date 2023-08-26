@@ -1,0 +1,12 @@
+
+    .co-titleSeparatorr-titleHome{
+       @apply flex items-center justify-between sm:justify-start ;
+       &-separator{
+        @apply bg-black h-[1px] w-auto flex-[1] mx-4 hidden sm:block md:mx-8;
+        }
+        a{
+        @apply underline;
+        }
+    } 
+  
+  

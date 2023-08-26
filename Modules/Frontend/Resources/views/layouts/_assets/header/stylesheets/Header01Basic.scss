@@ -1,0 +1,53 @@
+.navbar{
+    min-height: initial;
+    @apply py-0;
+  }
+  .nav-bar-social{
+    @apply flex items-center space-x-2
+  }
+  .nav-bar-social a{
+    display: block;
+  }
+  
+  .nav-bar-social-wrapper{
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s;
+    @apply h-[20px] md:h-[30px];
+  }
+  .nav-bar-social-wrapper.active{
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @screen <lg{
+    .nav-bar-social-wrapper .navbar-end{
+      width: 100%
+    }
+    .nav-bar-social-wrapper .navbar-start{
+      @apply hidden
+    }
+  }
+  .logo{
+    @apply md:-mt-9 w-[100px] md:w-auto;
+    transition: all .25s;
+  }
+  .logo.active{
+    margin-top: 0;
+  }
+  .navbar-main{
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+  }
+  .navbar-main + *{
+    @apply mt-[90px] md:mt-[100px] lg:mt-[100px]
+  }
+  .navbar-start{
+    @apply lg:w-1/5 2xl:w-1/2
+  }
+  .navbar-end{
+    @apply lg:w-4/5 2xl:w-1/2
+  }

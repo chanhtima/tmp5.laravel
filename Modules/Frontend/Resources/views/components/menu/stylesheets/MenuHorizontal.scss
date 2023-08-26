@@ -1,0 +1,9 @@
+.co-menu-horizontal{
+    @apply menu menu-horizontal px-1 text-16 2xl:text-18 text-white ;
+    li a:active,li summary:active{
+        @apply !bg-transparent ;
+    }
+    li a,li summary{
+        @apply px-4 hover:text-secondary border-b-secondary hover:border-b rounded-none;
+    }
+}
